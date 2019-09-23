@@ -3,7 +3,7 @@
 ## Introduction
 
 <p align="center">
- <img src="images/fellaini.jpeg"/>
+ <img src="footcamp-doc/images/fellaini.jpeg"/>
 </p>
 
 This is a football fantasy application with real players of the Premier League.
@@ -11,13 +11,6 @@ This is a football fantasy application with real players of the Premier League.
 In this app you will join to a league and get a random team with 18 players and you will compite with your friends and others to be the best of all. 
 
 The options available to you will be change your start line up and see your team's evolution in the general table of your league.
-
-<img src="images/Page-1.png" width="160" height="200" />  <img src="images/Page-2.png" width="160" height="200" />
-<img src="images/Page-3.png" width="160" height="200" />  <img src="images/Page-4.png" width="160" height="200" />
-<img src="images/Page-5.png" width="160" height="200" />  <img src="images/Page-6.png" width="160" height="200" />
-<img src="images/Page-7.png" width="160" height="200" />  <img src="images/Page-8.png" width="160" height="200" />
-<img src="images/Page-9.png" width="160" height="200" />  <img src="images/Page-11.png" width="160" height="200" />
-
 
 ## Functional description
 
@@ -39,31 +32,31 @@ You can only use this app if you have an account and you are logged.
 
 
 ### Use Cases
-![Use Cases](images/use-cases.png)
+![Use Cases](footcamp-doc/images/use-cases.png)
 
 ### Flowcharts
 
-![Flow](images/flow.png)
+![Flow](footcamp-doc/images/flow.png)
 
 ## Technical Description
 
 ### Blocks
-![Blocks](images/blocks.png)
+![Blocks](footcamp-doc/images/blocks.png)
 
 ### Components
-![Components](images/components.png)
+![Components](footcamp-doc/images/components.png)
 
 
 ### Data Model
-![Data Model](images/data-model.png)
+![Data Model](footcamp-doc/images/data-model.png)
 
 ### Code Coverage
 
 #### ![API Coverage](https://img.shields.io/badge/API_Coverage-98%25-green.svg)
-![API Coverage](images/test-coverage-footcamp-api.png)
+![API Coverage](footcamp-doc/images/test-coverage-footcamp-api.png)
 
 #### ![APP Coverage](https://img.shields.io/badge/APP_Coverage-87%25-green.svg)
-![APP Coverage](images/test-coverage-footcamp-app.png)
+![APP Coverage](footcamp-doc/images/test-coverage-footcamp-app.png)
 
 
 #### TODO
