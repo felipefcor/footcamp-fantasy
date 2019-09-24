@@ -7,7 +7,7 @@ import InitialHeader from '../InitialHeader'
 
 function MyLineup (props) {
   
-    const { leagueId, teamId, setTeamId} = useContext(Context)
+    const {teamId} = useContext(Context)
     const [lineup, setLineup] = useState()
     const [player, setPlayer] = useState()
     const [error , setError] = useState(undefined) 

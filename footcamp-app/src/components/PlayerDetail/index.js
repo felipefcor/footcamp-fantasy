@@ -43,10 +43,10 @@ import Header from '../Header'
             case 2:
             return 'Defender'
             break;
-            case 2:
+            case 3:
             return 'Midfielder'
             break;
-            case 2:
+            case 4:
             return 'Striker'
             break;
         }
