@@ -14,7 +14,6 @@ function Login(props) {
   const [password, setPassword] = useState('')
   const { user, setUser } = useContext(Context)
   const [error , setError] = useState(undefined) 
-  const [league , setLeague] = useState(undefined) 
   const { history } = props
   
   
@@ -33,7 +32,7 @@ function Login(props) {
     return(async()=>{
 
         try {
-          debugger
+          
           await logic.authenticateUser(email, password)
           
           //setting the user for further use

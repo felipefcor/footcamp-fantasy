@@ -355,6 +355,9 @@ input {
   text-align: left;
 }
 
+.title {
+  width: 50%;
+}
 .title__name {
   margin: 5%;
 }

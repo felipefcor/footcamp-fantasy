@@ -33,7 +33,7 @@ function MyTeam (props) {
                 
             
         })()
-    }, [setTeams])
+    }, [])
 
    
 

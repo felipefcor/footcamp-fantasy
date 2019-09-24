@@ -22,7 +22,7 @@ import Header from '../Header'
             setError(message)
           }
         })()
-    }, [match])
+    }, [])
       
     function handleBack ()  {
      

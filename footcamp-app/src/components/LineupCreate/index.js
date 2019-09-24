@@ -40,7 +40,7 @@ function MyLineup (props) {
           }
             
         })()
-    }, [teamId])
+    }, [])
 
     return <div>
           <section className="create-lineups">

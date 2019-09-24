@@ -1,9 +1,9 @@
 import logic from '..'
-import bcrypt from 'bcryptjs'
 
 const { random } = Math
 
 const { database, models: { User } } = require('footcamp-data')
+import bcrypt from 'bcryptjs'
 
 
 // const { env: { DB_URL_TEST }} = process // WARN this destructuring doesn't work in react-app :(

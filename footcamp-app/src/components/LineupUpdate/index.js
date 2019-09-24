@@ -46,7 +46,7 @@ function LineupUpdate({match ,history}) {
           }
             
         })()
-    }, [lineupChanges, match])
+    }, [])
 
     function handleBack(){
        
@@ -68,7 +68,7 @@ function LineupUpdate({match ,history}) {
                 
             } catch ({ message }) {
                     
-                console.log('fail create team', message)
+                setError(message)
             }
         })()
     }

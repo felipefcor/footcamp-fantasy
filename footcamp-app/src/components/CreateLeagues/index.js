@@ -19,7 +19,7 @@ function CreateLeagues(props) {
     function handleCreate (name, code) {
        
         (async()=>{
-            debugger
+            
             try {
                
                 const leagueId = await logic.createLeague(name, code)

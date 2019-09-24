@@ -23,7 +23,7 @@ function CreateTeam(props) {
         (async()=>{
             
             try {
-                debugger
+                
                 //call to logic and recveive 18 players and the id of the team
                 const result  = await logic.createTeam(name, sessionStorage.league)
                 const players  = result.players.players.map(results=> results)

@@ -1,12 +1,16 @@
 # Fantasy Football Skylab
 
+### [DEMO](http://footcamp-fantasy.surge.sh/#/)
+
 ## Introduction
 
 <p align="center">
  <img src="footcamp-doc/images/fellaini.jpeg"/>
 </p>
 
-This is a football fantasy application with real players of the Premier League.
+This is a football fantasy application (SPA) with real players of the Premier League.
+
+Is thougth to use as a mobile application.
 
 In this app you will join to a league and get a random team with 18 players and you will compite with your friends and others to be the best of all. 
 
@@ -64,9 +68,13 @@ You can only use this app if you have an account and you are logged.
 Version 2.0
 
 * The user can participate in several leagues at the time
-* Be able to synchronize the leagues with real Premier league and update the table
+* Make the app able for all the devices
 
 Version 3.0
+
+* Be able to synchronize the leagues with real Premier league and update the table
+
+Version 4.0
 * Add sales market players inside every league
 
 

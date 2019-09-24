@@ -32,7 +32,7 @@ import PlayerResult from '../PlayerResult'
             setError(message)
           }
         })()
-    }, [match])
+    }, [])
       
   const handleBack = () => {
      
