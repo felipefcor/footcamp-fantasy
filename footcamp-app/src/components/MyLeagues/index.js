@@ -33,7 +33,11 @@ function MyLeagues (props) {
         })()
     }, [])
 
-     
+     function checkTeam(){
+
+        sessionStorage.team ? history.push('/myteam') : history.push('/create-teams')
+    }
+
 
 
     return  <section className="league">
@@ -50,7 +54,8 @@ function MyLeagues (props) {
                     <a href="" onClick={event => {
                         event.preventDefault()
                                         
-                        history.push('/myteam')
+                        checkTeam()
+                        
                     }}><i class="fas fa-arrow-alt-circle-right fa-2x"></i></a>
 
                 
