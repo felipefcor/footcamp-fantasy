@@ -14,7 +14,7 @@ function CreateTeam(props) {
 
     const handleNameInput = event => setName(event.target.value)
     
-    function handleCreateTeam( name) {
+    function handleCreateTeam(name) {
 
 
         (async()=>{
