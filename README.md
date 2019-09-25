@@ -1,6 +1,6 @@
 # Fantasy Football Skylab
 
-### [DEMO](http://footcamp-fantasy.surge.sh/#/)
+<!-- ### [DEMO](http://footcamp-fantasy.surge.sh/#/) -->
 
 ## Introduction
 
