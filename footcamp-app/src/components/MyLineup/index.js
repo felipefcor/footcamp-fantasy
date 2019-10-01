@@ -45,7 +45,7 @@ function MyLineup (props) {
     return <div>
             <section className="mylineup">
             <Header />
-            <h2>MY LINEUP</h2>
+            <h2 className="mylineup__title" >MY LINEUP</h2>
              <div>     
                 <ul>
              

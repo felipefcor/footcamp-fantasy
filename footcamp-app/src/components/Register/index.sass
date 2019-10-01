@@ -1,33 +1,13 @@
 .register
     
     &__content
-        width: 80%
-        margin: 20% auto
+        width: 75%
+        margin: 10% auto
         border: 1px solid white
-    &__image
-        
-        background-size: cover 
-        background-color: white
-        z-index: -1
-        position: absolute
-        top: 0
-        left: 0
-        width: 100%
-.links
-    display: flex
-    flex-direction: column
-    flex-wrap: nowrap
-    color: black
-    text-decoration: none
-    background-color: white
-    font-size: 18px
-    display: block
-    padding: 3%
-    width: 25%
-    margin: 5px auto
-    text-align: center
 
-
+        &__title            
+            margin: 0.5rem auto
+            
 form
     
     text-align: center
@@ -44,3 +24,29 @@ input
     padding: 2%
     margin: 2%
 
+/* On screens that are 500px or more*/
+@media (min-width: 500px) 
+    .register
+
+        &__content
+            width: 50%
+            margin: 9% auto
+            border: 1px solid white
+
+@media (min-width: 742px) 
+    
+    .register
+
+        &__content
+            width: 35%
+            margin: 5% auto
+            border: 1px solid white
+
+@media (min-width: 1024px) 
+    
+    .register
+
+        &__content
+            width: 24%
+            margin: 2% auto
+            border: 1px solid white

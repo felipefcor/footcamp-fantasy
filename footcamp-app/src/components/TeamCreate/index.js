@@ -2,19 +2,22 @@ import React, { useState, useContext } from 'react'
 import logic from '../../logic'
 import PlayerResultInitial from '../PlayerResultInitial'
 import { withRouter } from 'react-router-dom'
+import Context from '../Context'
 import Feedback from '../Feedback'
 import InitialHeader from '../InitialHeader'
 
 function CreateTeam(props) {
 
     const { history } = props
+    
+    const { name, setName,  leagueId, teamId, setTeamId } = useContext(Context)
     const [error , setError] = useState(undefined) 
     const [player , setPlayer] = useState(undefined) 
     
 
     const handleNameInput = event => setName(event.target.value)
     
-    function handleCreateTeam(name) {
+    function handleCreateTeam( name) {
 
 
         (async()=>{

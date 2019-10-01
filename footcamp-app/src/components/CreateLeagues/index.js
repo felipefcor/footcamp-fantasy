@@ -19,7 +19,7 @@ function CreateLeagues(props) {
     function handleCreate (name, code) {
        
         (async()=>{
-            
+            debugger
             try {
                
                 const leagueId = await logic.createLeague(name, code)
@@ -76,7 +76,7 @@ function CreateLeagues(props) {
         <section className="create">
             <InitialHeader />
                 <div className="create__content">
-                <h2 className="create__content__title">CREATE A LEAGUE</h2>
+                <h2 className="create__content__title">Create a league</h2>
                 <form className="create__content__form-create" onSubmit={handleFormSubmitCreate}>
                 <div class="create__content__form-create-inputs">
                     <input
@@ -101,7 +101,7 @@ function CreateLeagues(props) {
                     <button>Submit</button>
                 </form>
 
-                <h2 className="create__content__create__title">JOIN A LEAGUE</h2>
+                <h2 className="create__content__create__title">Join a league</h2>
                 <form className="create__content__form-create" onSubmit={handleFormSubmitJoin}>
                 <div class="create__content__form-create-inputs">
                     <input

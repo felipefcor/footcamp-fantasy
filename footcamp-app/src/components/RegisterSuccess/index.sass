@@ -1,26 +1,52 @@
 .register-successful
     
+    &__title
+         margin: 0.5rem auto
+         
     &__content
         font-size: 18px
-        margin: 20%
+        margin: 10%
 
-    &__image
-        
-        background-size: cover 
-        background-color: white
-        z-index: -1
-        position: absolute
-        top: 0
-        left: 0
-        width: 100%
+.links
+    display: flex
+    flex-direction: column
+    flex-wrap: nowrap
+    color: white
+    text-decoration: none
+    font-size: 14px
+    display: block
+    padding: 0.5rem
+    width: 50%
+    margin: 1rem auto
+    text-align: center
+    border: 1px solid white
 
 
-    &__link
-        color: white
-        text-decoration: none
-        background-color: black
-        font-size: 14px
-        display: block
-        padding: 3%
+  
+/* On screens that are 500px or more*/
+@media (min-width: 500px) 
+    .register-successful
+
+        &__content
+           font-size: 16px
+           margin: 8%
+
+@media (min-width: 742px) 
+    
+    .register-successful
+
+        &__content
+           font-size: 16px
+           margin: 6%
+    .links
         width: 40%
-        margin: 5px auto
+
+@media (min-width: 1024px) 
+    
+    .register-successful
+
+       &__content
+           font-size: 16px
+           margin: 8%
+    .links
+        width: 30%

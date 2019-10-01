@@ -1,7 +1,6 @@
 import React from 'react'
 import InitialHeader from '../InitialHeader'
 import { withRouter } from "react-router-dom"
-import backimage from '../../style/img/pitch-blur.jpeg'
 
 function Landing(props) {
   const { history} = props
@@ -22,9 +21,9 @@ function Landing(props) {
     return  <>
         
         <section className="body-landing">
-        <img className="body-landing__image" src={backimage}/>
+       
         <InitialHeader />
-          <h2>The soccer fantasy game for all the football enthusiastics</h2>
+          <h2 className="body-landing__subtitle">The soccer fantasy game for all the football enthusiastics</h2>
           
           <div className="body-landing__content">  
             <ul>

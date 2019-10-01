@@ -33,16 +33,15 @@ function MyLeagues (props) {
         })()
     }, [])
 
-     function checkTeam(){
+    function checkTeam(){
 
         sessionStorage.team ? history.push('/myteam') : history.push('/create-teams')
     }
 
 
-
     return  <section className="league">
                     <InitialHeader />
-                    <h2 className="league__title">MY LEAGUES</h2>
+                    <h2 className="league__title">My leagues</h2>
 
                     {leagues && 
                     <div className="league__content">
@@ -51,11 +50,10 @@ function MyLeagues (props) {
                     <p className="league__content__name"> {leagues.name} </p>
                     <p> {leagues.nameTeam}</p>
                     
-                    <a href="" onClick={event => {
+                    <a className="link" href="" onClick={event => {
                         event.preventDefault()
-                                        
                         checkTeam()
-                        
+                       
                     }}><i class="fas fa-arrow-alt-circle-right fa-2x"></i></a>
 
                 

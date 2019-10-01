@@ -4,30 +4,13 @@
         width: 80%
         margin: 20% auto
         border: 1px solid white
-    &__image
-        
-        background-size: cover 
-        background-color: white
-        z-index: -1
-        position: absolute
-        top: 0
-        left: 0
-        width: 100%
 
-.links
-    display: flex
-    flex-direction: column
-    flex-wrap: nowrap
-    color: black
-    text-decoration: none
-    background-color: white
-    font-size: 14px
+        &__title
+            margin: 0.5rem auto
+            
+.link
     display: block
-    padding: 3%
-    width: 20%
-    margin: 5px auto
-    text-align: center
-
+    margin: 0.5rem auto
 
 form
     
@@ -45,3 +28,31 @@ input
     padding: 2%
     margin: 2%
 
+
+/* On screens that are 500px or more*/
+@media (min-width: 500px) 
+
+    .login
+
+        &__content
+            width: 60%
+            margin: 9% auto
+            border: 1px solid white
+
+@media (min-width: 742px) 
+    
+    .login
+
+        &__content
+            width: 40%
+            margin: 5% auto
+            border: 1px solid white
+
+@media (min-width: 1024px) 
+    
+    .login
+
+        &__content
+            width: 30%
+            margin: 2% auto
+            border: 1px solid white

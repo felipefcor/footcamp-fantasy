@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 function PlayerResult({ player }) {
 
@@ -7,7 +7,7 @@ function PlayerResult({ player }) {
     
     function addDefaultSrc(event) {
        
-        event.target.src = 'http://localhost:8080/images/avatar.jpg'
+        event.target.src = 'https://infinite-caverns-24790.herokuapp.com/images/avatar.jpg'
           
     }
 
@@ -25,12 +25,13 @@ function PlayerResult({ player }) {
             case 4:
             return 'Striker'
             break;
-        }
+            
     }
+}
     return <div className="card-players"> 
    
         
-            <img className="card-players__image" onError={addDefaultSrc} src={"http://localhost:8080" + photo} /> 
+            <img className="card-players__image" onError={addDefaultSrc} src={"https://infinite-caverns-24790.herokuapp.com" + photo} /> 
             
               <div className="card-players__content" >
             <p className="card-players__content__name">{name} {surname} </p>

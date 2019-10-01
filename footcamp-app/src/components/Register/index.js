@@ -3,7 +3,6 @@ import logic from '../../logic'
 import { withRouter} from 'react-router-dom'
 import Feedback from '../Feedback'
 import InitialHeader from '../InitialHeader'
-import backimage from '../../style/img/pitch-blur.jpeg'
 
 
 function Register(props) {
@@ -63,10 +62,10 @@ function Register(props) {
     return (
         <div >
             <section className="register">
-            <img className="register__image" src={backimage}/>
+           
             <InitialHeader />
             <div className="register__content">
-            <h2>REGISTER</h2>
+            <h2 className="register__content__title">REGISTER</h2>
             <form onSubmit={handleFormSubmit}>
             <div class="form-inputs">
                 <input
@@ -113,7 +112,7 @@ function Register(props) {
             
             {error && <Feedback message={error}/>}
 
-            <a href="#" onClick={event => {
+            <a className="link"  href="#" onClick={event => {
             event.preventDefault()
             handleBack()
             }}><i className="fas fa-arrow-circle-left fa-2x"></i></a>

@@ -56,7 +56,7 @@ import PlayerResult from '../PlayerResult'
                     </a>
                     </li>)}
             </ul>
-                <a href="#" onClick={event => {
+                <a className="link" href="#" onClick={event => {
                 event.preventDefault()
                 handleBack()
             }}><i className="fas fa-arrow-circle-left fa-2x"></i></a>

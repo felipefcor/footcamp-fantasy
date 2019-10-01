@@ -1,69 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
-/* http://meyerweb.com/eric/tools/css/reset/ 
- * v2.0 | 20110126
- * License: none (public domain) */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+.body-landing__subtitle {
+  padding: 1rem 0;
+  margin: 1rem;
+  font-size: 1.3rem;
 }
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
 .body-landing__content {
   width: 100%;
-  margin: 20% auto;
-}
-.body-landing__image {
-  background-color: white;
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  margin: 10% auto;
 }
 .body-landing__links {
   display: flex;
@@ -71,16 +14,42 @@ table {
   flex-wrap: nowrap;
   color: white;
   text-decoration: none;
-  background-color: black;
-  font-size: 14px;
+  font-size: 0.8rem;
   display: block;
-  padding: 3%;
-  width: 20%;
-  margin: 5px auto;
+  padding: 0.5rem;
+  width: 50%;
+  margin: 0.5rem auto;
   text-align: center;
-  border: 1px solid black;
+  border: 1px solid white;
 }
 
+/* On screens that are 500px or more*/
+@media (min-width: 500px) {
+  .body-landing__subtitle {
+    font-size: 1rem;
+  }
+  .body-landing__content {
+    width: 100%;
+    margin: 7% auto;
+  }
+  .body-landing__links {
+    padding: 0.3rem;
+    width: 30%;
+  }
+}
+@media (min-width: 742px) {
+  .body-landing__subtitle {
+    font-size: 1rem;
+  }
+  .body-landing__content {
+    width: 100%;
+    margin: 3% auto;
+  }
+  .body-landing__links {
+    padding: 0.2rem;
+    width: 20%;
+  }
+}
 .feedback__text {
   color: white;
   text-align: center;
@@ -96,29 +65,13 @@ table {
   margin: 20% auto;
   border: 1px solid white;
 }
-.login__image {
-  background-size: cover;
-  background-color: white;
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+.login__content__title {
+  margin: 0.5rem auto;
 }
 
-.links {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  color: black;
-  text-decoration: none;
-  background-color: white;
-  font-size: 14px;
+.link {
   display: block;
-  padding: 3%;
-  width: 20%;
-  margin: 5px auto;
-  text-align: center;
+  margin: 0.5rem auto;
 }
 
 form {
@@ -139,34 +92,35 @@ input {
   margin: 2%;
 }
 
+/* On screens that are 500px or more*/
+@media (min-width: 500px) {
+  .login__content {
+    width: 60%;
+    margin: 9% auto;
+    border: 1px solid white;
+  }
+}
+@media (min-width: 742px) {
+  .login__content {
+    width: 40%;
+    margin: 5% auto;
+    border: 1px solid white;
+  }
+}
+@media (min-width: 1024px) {
+  .login__content {
+    width: 30%;
+    margin: 2% auto;
+    border: 1px solid white;
+  }
+}
 .register__content {
-  width: 80%;
-  margin: 20% auto;
+  width: 75%;
+  margin: 10% auto;
   border: 1px solid white;
 }
-.register__image {
-  background-size: cover;
-  background-color: white;
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
-.links {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  color: black;
-  text-decoration: none;
-  background-color: white;
-  font-size: 18px;
-  display: block;
-  padding: 3%;
-  width: 25%;
-  margin: 5px auto;
-  text-align: center;
+.register__content__title {
+  margin: 0.5rem auto;
 }
 
 form {
@@ -187,34 +141,84 @@ input {
   margin: 2%;
 }
 
+/* On screens that are 500px or more*/
+@media (min-width: 500px) {
+  .register__content {
+    width: 50%;
+    margin: 9% auto;
+    border: 1px solid white;
+  }
+}
+@media (min-width: 742px) {
+  .register__content {
+    width: 35%;
+    margin: 5% auto;
+    border: 1px solid white;
+  }
+}
+@media (min-width: 1024px) {
+  .register__content {
+    width: 24%;
+    margin: 2% auto;
+    border: 1px solid white;
+  }
+}
+.register-successful__title {
+  margin: 0.5rem auto;
+}
 .register-successful__content {
   font-size: 18px;
-  margin: 20%;
-}
-.register-successful__image {
-  background-size: cover;
-  background-color: white;
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-.register-successful__link {
-  color: white;
-  text-decoration: none;
-  background-color: black;
-  font-size: 14px;
-  display: block;
-  padding: 3%;
-  width: 40%;
-  margin: 5px auto;
+  margin: 10%;
 }
 
+.links {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+  padding: 0.5rem;
+  width: 50%;
+  margin: 1rem auto;
+  text-align: center;
+  border: 1px solid white;
+}
+
+/* On screens that are 500px or more*/
+@media (min-width: 500px) {
+  .register-successful__content {
+    font-size: 16px;
+    margin: 8%;
+  }
+}
+@media (min-width: 742px) {
+  .register-successful__content {
+    font-size: 16px;
+    margin: 6%;
+  }
+
+  .links {
+    width: 40%;
+  }
+}
+@media (min-width: 1024px) {
+  .register-successful__content {
+    font-size: 16px;
+    margin: 8%;
+  }
+
+  .links {
+    width: 30%;
+  }
+}
 .league {
-  background-color: #394a6d;
   height: 100vh;
   width: 100vw;
+}
+.league__title {
+  margin: 0.5rem;
 }
 .league__content {
   width: 80%;
@@ -235,9 +239,11 @@ input {
 }
 
 .create {
-  background-color: #394a6d;
   width: 100vw;
   height: 100vh;
+}
+.create__content__title {
+  margin: 0.5rem;
 }
 .create__content__form-create {
   text-align: center;
@@ -267,7 +273,6 @@ input {
 /* Navbar container */
 .navbar {
   overflow: hidden;
-  background-color: #394a6d;
 }
 
 /* Links inside the navbar */
@@ -347,6 +352,10 @@ input {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 0.3rem;
+}
+.low-menu a {
+  color: black;
 }
 
 .code {
@@ -355,9 +364,6 @@ input {
   text-align: left;
 }
 
-.title {
-  width: 50%;
-}
 .title__name {
   margin: 5%;
 }
@@ -376,23 +382,27 @@ input {
 }
 
 .myteam {
-  background-color: #394a6d;
   width: 100vw;
+}
+.myteam__title {
+  margin: 0.5rem;
 }
 
 .players {
-  background-color: #394a6d;
+  text-decoration: none;
   width: 70%;
 }
 
 .mylineup {
-  background-color: #394a6d;
   width: 100vw;
+}
+.mylineup__title {
+  margin: 0.5rem;
 }
 
 .item-players {
-  background-color: #394a6d;
   width: 70%;
+  text-decoration: none;
 }
 
 .card-initial {
@@ -400,7 +410,6 @@ input {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-color: #394a6d;
 }
 .card-initial__image {
   width: 80%;
@@ -428,7 +437,8 @@ input {
 .card-players p {
   text-align: center;
   color: white;
-  font-size: 15px;
+  font-size: 1rem;
+  text-decoration: none;
 }
 .card-players a {
   font-size: 1px;
@@ -451,7 +461,6 @@ input {
 }
 
 .detail {
-  background-color: #394a6d;
   width: 100vw;
 }
 
@@ -470,7 +479,7 @@ input {
 }
 .player-detail__content {
   display: flex;
-  width: 85%;
+  width: 89%;
   background-color: rgba(0, 0, 0, 0.5);
   flex-direction: column;
   border: 0.5px solid white;
@@ -497,20 +506,69 @@ input {
 
 .initial-header {
   display: flex;
-  border: 1px solid white;
-  padding: 5%;
+  justify-content: center;
+  border: 0.05rem solid white;
+  padding: 2rem;
 }
 .initial-header__image {
   width: 30%;
 }
 .initial-header__text {
   text-align: center;
-  font-size: 1.5rem;
+  align-self: center;
 }
 
+/* On screens that are 500px or more*/
+@media (min-width: 500px) {
+  .initial-header {
+    display: flex;
+    justify-content: center;
+    border: 0.05rem solid white;
+  }
+  .initial-header__text {
+    text-align: center;
+    align-self: center;
+    font-size: 1.5rem;
+  }
+  .initial-header__image {
+    width: 15%;
+  }
+}
+@media (min-width: 742px) {
+  .initial-header {
+    display: flex;
+    justify-content: center;
+    border: 0.05rem solid white;
+  }
+  .initial-header__text {
+    text-align: center;
+    align-self: center;
+    align-self-font-size: 1.3rem;
+  }
+  .initial-header__image {
+    width: 10%;
+  }
+}
+@media (min-width: 1024px) {
+  .initial-header {
+    display: flex;
+    justify-content: space-center;
+    border: 0.05rem solid white;
+  }
+  .initial-header__text {
+    text-align: center;
+    align-self: center;
+    font-size: 1.3rem;
+  }
+  .initial-header__image {
+    width: 10%;
+  }
+}
 .table {
-  background-color: #394a6d;
   width: 100vw;
+}
+.table__title {
+  margin: 0.5rem;
 }
 .table__clasification {
   display: flex;
@@ -518,7 +576,7 @@ input {
   justify-content: space-between;
   margin: auto;
   width: 50%;
-  border: 1px solid #45454d;
+  border: 1px solid white;
   padding: 5px;
 }
 .table__clasification__list {
@@ -527,6 +585,7 @@ input {
 .table__clasification__list__tables {
   background-color: rgba(0, 0, 0, 0.4);
   width: 100%;
+  text-decoration: none;
 }
 .table__clasification__list__team {
   font-size: 16px;
@@ -536,7 +595,6 @@ input {
 }
 
 .user-profile {
-  background-color: #394a6d;
   width: 100vw;
   height: 100vh;
 }
@@ -566,9 +624,11 @@ input {
 }
 
 .create-teams {
-  background-color: #394a6d;
   width: 100vw;
   height: 100vh;
+}
+.create-teams__title {
+  margin: 0.5rem;
 }
 .create-teams__link {
   color: white;
@@ -582,21 +642,15 @@ input {
   text-align: center;
 }
 
-.players-create {
-  background-color: #394a6d;
-}
-
 li {
   list-style: none;
 }
 
 .teamsleague {
-  background-color: #394a6d;
   width: 100vw;
 }
 
 .create-lineups {
-  background-color: #394a6d;
   width: 100vw;
   height: 100vh;
 }
@@ -614,17 +668,15 @@ li {
   margin: 5% auto;
 }
 
-.item-players-lineup {
-  background-color: #394a6d;
-}
-
 li {
   list-style: none;
 }
 
 .lineupdate {
-  background-color: #394a6d;
   width: 100vw;
+}
+.lineupdate__title {
+  margin: 0.5rem;
 }
 
 .player-lineup {
@@ -642,7 +694,7 @@ li {
 }
 .player-lineup__content {
   display: flex;
-  width: 85%;
+  width: 89%;
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 0.5em;
@@ -657,35 +709,32 @@ p {
   font-size: 20px;
 }
 
-h1 {
-  color: white;
-  font-size: 30px;
-  text-align: center;
-  margin: 5%;
+* {
+  box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, p, a, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #e7e6f0;
+  background: linear-gradient(90deg, #e7e6f0 0%, #7ea1bb 0%, #0e3560 100%);
+}
+
+h1, h2, h3, h4, p, a {
   font-family: "Monda", sans-serif;
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  font-size: 1.5rem;
 }
 
 h2 {
-  color: white;
-  font-size: 20px;
-  text-align: center;
-  margin: 5%;
-  font-family: "Monda", sans-serif;
-}
-
-a {
-  color: black;
-  text-decoration: none;
-  font-size: 1rem;
-  display: block;
-  padding: 3%;
-  margin: 5px auto;
-  text-align: center;
-  font-family: "Monda", sans-serif;
-}
-
-p {
-  font-family: "Monda", sans-serif;
+  font-size: 1.2rem;
 }
 
 button {
@@ -699,12 +748,6 @@ button button:hover {
   background-color: white;
   color: #D7D9DA;
   font-weight: bold;
-}
-
-body {
-  background-color: #394a6d;
-  height: 100vh;
-  width: 100vw;
 }
 
 /*# sourceMappingURL=index.css.map */

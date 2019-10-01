@@ -33,7 +33,7 @@ function MyLeagues (props) {
     return <div>
             <section className="table">
             <Header />
-                    <h2>MY TABLE</h2>
+                    <h2 className="table__title">MY TABLE</h2>
                 
                 <ul className="table__clasification">
                     {table && table.map((tables ,i) => <li className="table__clasification__list" key={tables.id}> 

@@ -31,7 +31,7 @@ import Header from '../Header'
 
     function addDefaultSrc(event) {
         
-        event.target.src = 'http://localhost:8080/images/avatar.jpg'
+        event.target.src = 'https://infinite-caverns-24790.herokuapp.com/images/avatar.jpg'
         
     }
 
@@ -49,6 +49,7 @@ import Header from '../Header'
             case 4:
             return 'Striker'
             break;
+            
         }
     }
 
@@ -56,7 +57,7 @@ import Header from '../Header'
         <section className="detail">
             <Header />
             {player && <div className="player-detail">
-                <img className="player-detail__image" onError={addDefaultSrc} src={"http://localhost:8080" + player.player.photo} width="300px"/>
+                <img className="player-detail__image" onError={addDefaultSrc} src={"https://infinite-caverns-24790.herokuapp.com" + player.player.photo} width="300px"/>
                 <div className="player-detail__content">
                     <p className="player-detail__content__name">{player.player.name} {player.player.surname}</p>
                     <p className="player-detail__content__position">{positionPlayer(player.player.position)}</p>

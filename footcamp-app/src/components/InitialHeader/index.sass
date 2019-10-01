@@ -3,12 +3,56 @@
 
 .initial-header
     display: flex 
-    border: 1px solid white
-    padding: 5%
+    justify-content: center
+    border: 0.05rem solid white
+    padding: 2rem
 
     &__image
         width: 30%
     &__text
         text-align: center
-        font-size: 1.5rem
+        align-self: center
 
+/* On screens that are 500px or more*/
+@media (min-width: 500px) 
+
+    .initial-header
+        display: flex 
+        justify-content: center
+        border: 0.05rem solid white
+        
+        &__text
+            text-align: center
+            align-self: center
+            font-size: 1.5rem
+        &__image
+            width: 15%
+
+@media (min-width: 742px) 
+
+    .initial-header
+        display: flex 
+        justify-content: center
+        border: 0.05rem solid white
+        
+        &__text
+            text-align: center
+            align-self: center
+             font-size: 1.3rem
+        &__image
+            width: 10%
+
+@media (min-width: 1024px) 
+
+    .initial-header
+        display: flex 
+        justify-content: space-center
+        border: 0.05rem solid white
+        
+        &__text
+            text-align: center
+            align-self: center
+            font-size: 1.3rem
+            
+        &__image
+            width: 10%

@@ -1,15 +1,14 @@
-import React, { useState, useEffect, useContext } from 'react'
+import React, { useState, useEffect } from 'react'
 import logic from '../../logic'
 import { withRouter} from 'react-router-dom'
-import Context from '../Context'
 import PlayerResult from '../PlayerResult'
 import Header from '../Header'
 
 
 function MyTeam (props) {
   
-    const { teams, setTeams,  } = useContext(Context)
     const [player, setPlayer] = useState()
+    const [teams, setTeams] = useState()
     
        
 
@@ -41,7 +40,7 @@ function MyTeam (props) {
     return <div>
             <section className="myteam">
             <Header />
-            <h2>MY TEAM</h2>
+            <h2 className="myteam__title" >MY TEAM</h2>
                
              <ul>
 

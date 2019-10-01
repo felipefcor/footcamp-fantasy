@@ -75,7 +75,7 @@ function LineupUpdate({match ,history}) {
 
     function addDefaultSrc(event) {
         
-        event.target.src = 'http://localhost:8080/images/avatar.jpg'
+        event.target.src = 'https://infinite-caverns-24790.herokuapp.com/images/avatar.jpg'
         
     }
 
@@ -101,7 +101,7 @@ function LineupUpdate({match ,history}) {
             <section className="lineupdate">
                 <Header />
                 <ul>
-                    <h2>AVAILABLE PLAYERS</h2>
+                    <h2 className="lineupdate__title" >AVAILABLE PLAYERS</h2>
                     {playerLineup && playerLineup.map(playerlineup => 
                     <li  key={playerlineup.player.id}
                     
@@ -113,7 +113,7 @@ function LineupUpdate({match ,history}) {
                     }}> 
                 
                         <div className="player-lineup">
-                        <img className="player-lineup__image" onError={addDefaultSrc} src={"http://localhost:8080" + playerlineup.player.photo} width="300px"/>
+                        <img className="player-lineup__image" onError={addDefaultSrc} src={"https://infinite-caverns-24790.herokuapp.com" + playerlineup.player.photo} width="300px"/>
                         <div className="player-lineup__content">
                             <p className="player-lineup__content__name">{playerlineup.player.name} {playerlineup.player.surname}</p>
                             <p className="player-lineup__content__position">{positionPlayer(playerlineup.player.position)}</p>
@@ -124,7 +124,7 @@ function LineupUpdate({match ,history}) {
 
                 </ul>
 
-                <a href="#" onClick={event => {
+                <a className="link" href="#" onClick={event => {
                         event.preventDefault()
                         handleBack()
                     }}><i class="fas fa-arrow-circle-left fa-2x"></i></a>

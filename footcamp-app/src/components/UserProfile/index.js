@@ -38,7 +38,7 @@ function UserProfile({history}) {
                         <p className="user-profile__card__content__surname">Surname: {user.surname}</p>
                         <p className="user-profile__card__content__email">E-mail: {user.email}</p>
                     </div> }
-                    <a href="#" onClick={event => {
+                    <a className="link" href="#" onClick={event => {
                         event.preventDefault()
                         handleBack()
                     }}><i className="fas fa-arrow-circle-left fa-2x"></i></a>
