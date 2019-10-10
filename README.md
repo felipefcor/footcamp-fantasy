@@ -65,10 +65,15 @@ You can only use this app if you have an account and you are logged.
 
 #### TODO
 
+Version 1.1
+
+<s>* Make the app able for all the devices </s>
+DONE!
+
 Version 2.0
 
 * The user can participate in several leagues at the time
-* Make the app able for all the devices
+
 
 Version 3.0
 
